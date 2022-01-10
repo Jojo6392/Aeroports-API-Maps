@@ -32,3 +32,16 @@ h4 {
 	padding: 10px 0;
 	cursor: pointer;
 }
+
+#form-delete {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 0.2rem;
+	padding: 10px;
+}

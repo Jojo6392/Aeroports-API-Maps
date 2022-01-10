@@ -9,6 +9,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKKM12U3DGYq4JUbpUwcaSQh_Vy4bI2nk&callback=MAP_API.initMap&libraries=&v=weekly"
       defer
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -19,6 +20,18 @@
     <div id="airports">
       <h4>Liste des aéroports</h4>
       <ul id="airports-list"></ul>
+    </div>
+
+    <form style="display: none;" id="connexion">
+      <input type="text" name="login">
+      <input type="password" name="password">
+      <input type="submit" value="Se connecter">
+    </form>
+
+    <div id="form-delete">
+      Êtes-vous sûr de vouloir supprimer cet aéroport ?
+      <button id="confirmDelete">OUI</button>
+      <button id="cancelDelete">NON</button>
     </div>
     <script src="./js/script.js"></script>
   </body>

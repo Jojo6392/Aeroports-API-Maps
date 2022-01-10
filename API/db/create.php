@@ -7,4 +7,9 @@ $db->exec("INSERT INTO airports(name, latitude, longitude) VALUES('Aéroport Cha
 $db->exec("INSERT INTO airports(name, latitude, longitude) VALUES('Hartsfield Airport - Atlanta', '33.6407282', '-84.4277001')");
 $db->exec("INSERT INTO airports(name, latitude, longitude) VALUES('Hongqiao Airport - Shanghai', '31.1925243', '121.3309125')");
 
+$db->exec("CREATE TABLE users(id INTEGER PRIMARY KEY, login TEXT, password TEXT, role TEXT)");
+$db->exec("INSERT INTO users(login, password, role) VALUES('admin', 'admin', 'admin')");
+$db->exec("INSERT INTO users(login, password, role) VALUES('client', 'client', 'client')");
+$db->exec("INSERT INTO users(login, password, role) VALUES('edit', 'edit', 'edit')");
+
 echo "airports table created\n";
